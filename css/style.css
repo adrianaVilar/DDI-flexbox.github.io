@@ -1,0 +1,128 @@
+.container {
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: clamp(400px, 95vw, 1000px);
+    min-height: 1000px;
+    align-items: stretch;
+}
+
+.cities ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    gap: 10px;
+    justify-content: space-around;
+}
+
+main .card-cities {
+    width: 300px;
+    max-width: 400px;
+}
+
+main .card-cities img {
+    max-width: 250px;
+    max-height: 250px;
+}
+
+.form {
+    background-color:#f2f2f2;
+    width: 95%;
+    max-width: 900px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.form label {
+    font-weight: bold;
+    margin: 10px;
+    padding: 10px;
+}
+
+.form input:not([type="submit"]):not([type="checkbox"]) {
+    padding: 10px;
+    margin: 5px 0 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    width: 100%;
+    max-width: 800px;
+}
+        
+.form input[type="submit"] {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 15px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.form input[type="submit"]:hover {
+    background-color: #1565C0;
+}
+
+.form input[type="checkbox"] {
+    margin-left: 10px;
+    cursor: pointer;
+}
+        
+.form fieldset {
+    border: none;
+    padding: 10px;
+    margin: 10px 0;
+    width: 95%;
+    max-width: 900px;
+}
+        
+.form legend {
+    font-weight: bold;
+    color: #007BFF;
+    padding-bottom: 30px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content-title {
+    display: inline;
+    justify-items: center;
+}
+
+.content-body {
+    display: flex;
+    width: 100%;
+    max-width: 900px;
+    justify-items: center;
+}
+
+.content-img img {
+    max-height: 200px;
+}
+
+.content-img figure {
+    margin: 0;
+}
+
+@media (max-width: 500px) {
+    .form {
+        padding: 5px;
+        margin: 5px;
+    }
+
+    .form fieldset {
+        padding: 0;
+        margin: 0;
+    }
+}

@@ -1,0 +1,160 @@
+:root {
+    box-sizing: border-box;
+    font-family: Helvetica;
+}
+
+ul {
+    list-style: none;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+header h1 {
+    font-size: clamp(1.5rem, 2.0rem, 2.5rem);
+}
+
+.menu {
+    background: #007BFF;
+    padding: 0.2em;
+    border-radius: 0 0 20px 20px;
+}
+
+.menu ul {
+    font-size: clamp(1rem, 1.2rem, 1.5rem);
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    padding: 1em;
+}
+
+.menu a:hover {
+    background: #1565C0;
+}
+
+#adote {
+    background: #1565c042;
+}
+
+#adote:hover {
+    background: #1565C0;
+}
+
+.breadcrumb {
+    font-size: clamp(0.8rem, 1rem, 1.2rem);
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    margin: 10px;
+}
+
+aside ul {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.card {
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 10px;
+    width: 200px;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.card h5 {
+    font-size: clamp(14px, 18px, 20px);
+    margin: 0;
+}
+
+.card h6 {
+    font-size: clamp(12px, 16px, 18px);
+    margin: 0;
+}
+
+.card p {
+    font-size: clamp(12px, 16px, 18px);
+    line-height: 1.5;
+    margin: 5px;
+    padding: 5px;
+}
+
+.card img {
+    width: 100%;
+    max-width: 100px;
+    height: auto;
+    max-height: 50px;
+    object-fit: cover;
+    object-position: top;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+
+footer {
+    background-color: #f2f2f2;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0.5em;
+    margin: 0.5em;
+}
+
+.social-media {
+    justify-content: space-around;
+}
+
+.social-media ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+@media (max-width: 500px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .menu {
+        border-radius: 20px 20px 20px 20px;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        align-items: center;
+        padding: 0.5em;
+        gap: 20px;
+    }
+
+    .menu a {
+        padding: 0.5em;
+    }
+}
